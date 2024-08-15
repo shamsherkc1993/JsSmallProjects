@@ -1,0 +1,42 @@
+.navbar {
+  background-color: rgb(87, 153, 210);
+  padding: 12px 50px;
+}
+.navbar ul li a {
+  color: #fff;
+}
+
+.paralink p {
+  font-size: 20px;
+  margin-top: 8px;
+  margin-left: 200px;
+  color: #fff;
+}
+
+.projectLinks {
+  padding: 12px 50px;
+  background-color: rgb(182, 188, 188);
+}
+
+.projectLinks ul li {
+  list-style: none;
+}
+
+.projectLinks ul li a {
+  text-decoration: none;
+  background-color: rgb(215, 122, 60);
+  padding: 7px 10px;
+  color: #fff;
+  transition: 0.5s;
+}
+.projectLinks ul li a:hover,
+.projectLinks ul li a:focus {
+  background-color: rgb(218, 95, 148);
+  transition: 0.5s;
+}
+.footer {
+  padding: 12px 50px;
+  color: #fff;
+  background-color: rgb(87, 153, 210);
+  text-align: center;
+}
