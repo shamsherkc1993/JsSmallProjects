@@ -14,12 +14,14 @@
 }
 
 .projectLinks {
-  padding: 12px 50px;
+  padding: 50px;
   background-color: rgb(182, 188, 188);
 }
 
 .projectLinks ul li {
   list-style: none;
+  float: left;
+  margin: 5px;
 }
 
 .projectLinks ul li a {
@@ -27,11 +29,11 @@
   background-color: rgb(215, 122, 60);
   padding: 7px 10px;
   color: #fff;
-  transition: 0.5s;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .projectLinks ul li a:hover,
 .projectLinks ul li a:focus {
-  background-color: rgb(218, 95, 148);
+  background-color: rgb(214, 255, 127);
   transition: 0.5s;
 }
 .footer {

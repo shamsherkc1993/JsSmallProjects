@@ -1,0 +1,67 @@
+.projectLinks {
+  min-height: 670px;
+}
+.projectLinks h2 {
+  color: rgb(165, 11, 24);
+  text-align: center;
+}
+
+.degreeFresult {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  display: none;
+  width: 50%;
+}
+.degreeFresult p {
+  font-size: 18px;
+  color: #000;
+}
+.degreeFresult p span {
+  font-size: 20px;
+  font-weight: 900;
+  color: rgb(165, 11, 24);
+}
+.form-group input {
+  width: 50%;
+}
+
+.ferhaneitToCelsuis {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  display: none;
+  width: 50%;
+}
+.ferhaneitToCelsuis p {
+  font-size: 18px;
+  color: #000;
+}
+.ferhaneitToCelsuis p span {
+  font-size: 20px;
+  font-weight: 900;
+  color: rgb(165, 11, 24);
+}
+
+/* #newText {
+  border: 1px solid red;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #fff;
+  max-height: 200px;
+  overflow: scroll;
+  display: none;
+}
+.wordandchar {
+  text-align: center;
+  padding-top: 30px;
+  color: rgb(165, 11, 24);
+}
+#character,
+#word {
+  font-weight: bolder;
+  color: #000;
+} */
