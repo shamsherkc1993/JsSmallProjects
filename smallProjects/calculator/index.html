@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="main.js"></script> -->
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item paralink">
+                <p>List of Projects, Please click the below Links</p>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="projectLinks">
+        <h1 id="sham">shamsher</h1>
+          <div class="container">
+            <div id="calculator">
+              <input id="display" readonly>
+              <div id="keys">
+                <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="clearDisplay()">C</button>
+              </div>
+            </div>
+          </div>
+      </div>
+    
+      <div class="footer">
+        <p>@shamsherkc</p>
+      </div>
+      <script>
+        let display = document.getElementById('display');
+        console.log(display)
+        function appendToDisplay(input) {
+          display.value += input;
+        }
+
+        function clearDisplay() {
+          display.value = "";
+        }
+
+        function calculate() {
+          try{
+            display.value = eval(display.value)
+
+          } catch (error){
+            display.value = "Error"
+          }  
+        }
+      </script>
+</body>
+</html>
+
+
