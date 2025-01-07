@@ -36,7 +36,6 @@
       </nav>
 
       <div class="projectLinks">
-        <h1 id="sham">shamsher</h1>
           <div class="container">
             <div id="calculator">
               <input id="display" readonly>
@@ -68,10 +67,12 @@
       </div>
       <script>
         let display = document.getElementById('display');
-        console.log(display)
         function appendToDisplay(input) {
-          display.value += input;
+
+          display.value = display.value+input;
+
         }
+
 
         function clearDisplay() {
           display.value = "";
@@ -85,6 +86,8 @@
             display.value = "Error"
           }  
         }
+       console.warn(+"gge")
+
       </script>
 </body>
 </html>

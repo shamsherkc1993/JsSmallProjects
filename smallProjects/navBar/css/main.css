@@ -1,0 +1,86 @@
+.projectLinks h2 {
+  color: rgb(165, 11, 24);
+  text-align: center;
+}
+#newText {
+  border: 1px solid red;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #fff;
+  max-height: 200px;
+  overflow: scroll;
+  display: none;
+}
+.wordandchar {
+  text-align: center;
+  padding-top: 30px;
+  color: rgb(165, 11, 24);
+}
+#character,
+#word {
+  font-weight: bolder;
+  color: #000;
+}
+
+#modalBox button {
+  background-color: rgb(255, 98, 0);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+#modalBox button:hover {
+  border: 1px solid #fff;
+  transition: 2s;
+}
+
+.navmain ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #e78fa3;
+  padding: 20px;
+}
+
+.navmain ul li {
+  display: inline;
+  padding: 0 20px;
+}
+
+.navmain ul li a:hover,
+.navmain ul li a:focus {
+  color: #1c85ed;
+}
+
+.navmain ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.menu {
+  display: none;
+  background: red;
+  width: fit-content;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 15px;
+  position: absolute;
+  top: 28%;
+  left: 2%;
+  padding: 5px 5px 5px;
+}
+
+.menu p {
+  font-size: 18px;
+}
+
+.newClassForNav {
+  display: none;
+}
+
+.viewMenu {
+  display: block;
+}
