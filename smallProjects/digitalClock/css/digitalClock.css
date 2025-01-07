@@ -1,0 +1,35 @@
+.center {
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    307deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(104, 9, 121, 1) 33%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  box-shadow: 10px 5px 5px rgba(0, 212, 255, 1);
+  padding: 20px;
+  border-radius: 30px;
+}
+
+#main {
+  margin: 13% 0;
+}
+
+#hour,
+#minute,
+#second {
+  font-size: 100px;
+  color: #fff;
+  font-weight: bolder;
+}
+
+#period {
+  font-size: 30px;
+  color: #fff;
+  font-weight: bolder;
+  padding: 20px;
+  margin-top: -40px;
+}
