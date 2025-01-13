@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="main.js"></script> -->
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="css/todoList.css">
+    <script src="js/main.js"></script>
+    <title>Word and character counter</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item paralink">
+                <p>List of Projects, Please click the below Links</p>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- <div class="projectLinks">
+          <h2>TO DO LIST</h2><br><br>
+         
+          <form>
+            <input type="text" id="inp" onfocus="focusFunction(this)" onblur="blurFunction(this)" oninput="inputFunction(this)">
+            <input type="text" id="inp2" onfocus="focusFunction(this)" onblur="blurFunction(this)">
+            <input type="text" id = "inputtext" oninput="inputFunction(this)">
+            <button onclick="clickFunction(this)">submit</button>
+          </form>
+
+          <div id="test" style="border: 1px solid red;"></div>
+         
+      </div> -->
+
+        <div class="mains">
+         <div class="divinputBtn">
+          <input type="text" value="" id="inputTask">
+          <button id="btn" onclick="submitForm()">Add ToDo</button>
+         </div>
+          <br>
+          <br>
+
+          <div id="taskLists">
+
+          </div>
+        </div>
+
+      
+    
+      <div class="footer">
+        <p>@shamsherkc</p>
+      </div>
+
+      <script>
+        // const todolists = document.querySelector("#todolists");
+        // const listValue = document.querySelector(".todovalue");
+        // let todoListValue = [];
+
+        // function getTodoListFromLS () {
+        //   return JSON.parse(localStorage.getItem("todo"));
+        // }
+
+
+
+        // document.querySelector(".btn").addEventListener("click", addToDoList);
+
+
+
+        // function addToDoList (e) {
+        //   e.preventDefault();
+        //   addTodoListLocalStorage(listValue.value)
+        //   // console.log("hello");
+        //   const liElement = document.createElement("li")
+        //   liElement.innerHTML = listValue.value;
+        //   todolists.append(liElement);
+        // };
+
+        // function addTodoListLocalStorage (todo) {
+        //   return localStorage.setItem('todoData', JSON.stringify(todo))
+
+        // }
+        // console.log("hello");
+
+
+        
+function submitForm() {
+
+  if(document.getElementById("inputTask").value == "") {
+    window.alert("Please input some lists")
+  } else {
+    const newTask =  document.createElement("li");
+  const taskList = document.getElementById("taskLists");
+  taskList.appendChild(newTask);
+  newTask.textContent = document.getElementById("inputTask").value;
+  document.getElementById("inputTask").value = "";  
+  deleteTask(newTask);
+  }
+
+  
+
+
+}
+
+function deleteTask(newTask) {
+  let deleteBtn = document.createElement("buttom");
+  deleteBtn.textContent = "X";
+  deleteBtn.classList.add("deletebutton")
+  newTask.appendChild(deleteBtn);
+  deleteBtn.onclick =  function () {
+    newTask.remove();
+    window.alert("Do you want to delete this list ?")
+  }
+
+  }
+
+
+
+
+             </script>
+</body>
+</html>
+
+

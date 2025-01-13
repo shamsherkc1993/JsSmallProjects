@@ -1,0 +1,24 @@
+.projectLinks h2 {
+  color: rgb(165, 11, 24);
+  text-align: center;
+}
+#newText {
+  border: 1px solid red;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #fff;
+  max-height: 200px;
+  overflow: scroll;
+  display: none;
+}
+.wordandchar {
+  text-align: center;
+  padding-top: 30px;
+  color: rgb(165, 11, 24);
+}
+#character,
+#word {
+  font-weight: bolder;
+  color: #000;
+}
