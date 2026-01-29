@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(69, 137, 102);
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+}
+
+h1 {
+  margin: 30px;
+  text-shadow: 5px 0 white;
+  font-size: 6rem;
+  color: #7d1111;
+}
+
+p {
+  font-size: 2rem;
+  color: #e31616;
+  text-shadow: 1px 1px white;
+}
+
+button {
+  padding: 10px;
+  background-color: #e31616;
+  color: #fff;
+  margin-top: 20px;
+  border: none;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+.footer {
+  margin-top: 40px;
+}

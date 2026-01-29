@@ -11,9 +11,10 @@
     <!-- <script src="main.js"></script> -->
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/digitalClock.css">
+    <link rel="stylesheet" href="css/dice.css">
 
-    <title>digitalClock</title>
+    <script src="js/main.js"></script>
+    <title>Ludo Dice</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm">
@@ -36,29 +37,56 @@
         </div>
       </nav>
 
-     <div class="container-fluid" id="main">
-      <div class="center">
-        <div class="row">
-          <div class="col-sm-4">
-            <p id="hour">HH</p>
-          </div>
-          <div class="col-sm-4">
-            <p id="minute">MM</p>
-          </div>
-          <div class="col-sm-4">
-            <p id="second">SS</p>
-          </div>
-          <p id="period">AMPM</p>
-        </div>
-      </div>
-     </div>
+<!-- <div id="dice"></div> -->
+ <div class="container">
+  <h1>JS Ludo</h1>
+
+  <div class="dice">
+    <p>Player 1</p>
+    <img src="images/dice1.png" id="check1" />
+  </div>
+
+  <div class="dice">
+    <p>Player 1</p>
+    <img src="images/dice6.png" id="check2" />
+  </div>
+
+  <div>
+    <button onclick="ludoGame()">Click me</button>
+  </div>
+
+ </div>
       <div class="footer">
         <p>@shamsherkc</p>
       </div>
-</body>
-</script>
-<script src="js/main.js"></script>
+      <script>
 
+      ludoGame = () => {
+
+       const min = 1;
+        const max = 6;
+        const playerOne = Math.floor(Math.random() * (max - min + 1) + min)
+        const playerOneDice = `images/dice${playerOne}.png`;
+        document.getElementById("check1").setAttribute("src", playerOneDice);
+
+        const playerTwo = Math.floor(Math.random() * (max - min + 1) + min)
+        const playerTwoDice = `images/dice${playerTwo}.png`;
+        document.getElementById("check2").setAttribute("src", playerTwoDice);
+
+        if (playerOne > playerTwo) {
+          document.querySelector('h1').innerHTML = "Player One Won"
+        } else if (playerTwo > playerOne) {
+          document.querySelector('h1').innerHTML = "Player Two Won"
+
+        } else {
+          document.querySelector('h1').innerHTML = "DRAW"
+
+        }
+
+      }
+
+      </script>
+</body>
 </html>
 
 
