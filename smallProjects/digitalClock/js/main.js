@@ -12,11 +12,6 @@ function clock() {
   const ampm = h >= 12 ? "PM" : "AM";
 
   console.log(h);
-
-  // if (h > 12) {
-  //   h = h - 12;
-  // }
-
   hour.innerText = h;
   minute.innerText = m;
   second.innerText = s;
